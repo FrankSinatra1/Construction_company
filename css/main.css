@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button, input {
+    outline: 0;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/*FIRST--PAGE*/
+
+.wrapper--section_one {
+    background-image: url(../images/main_image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vertical--line {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height: 100%;
+    width: 50px;
+    border-right: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.wrapper--header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.wrap--header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 89%;
+    height: 100px;
+}
+
+.wrapper--hidden--menu {
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.full--wrapper--hidden--menu {
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    display: none;
+}
+
+.close_up {
+    color: #1f1f1f;
+    z-index: 10;
+    font-family: ;
+    width: 120px;
+}
+
+.open--menu, .close_up {
+    transition: .3s;
+    opacity: .85;
+    font-family: UbuntuBold;   
+}.open--menu:hover, .close_up:hover{
+    opacity: 1;
+}
+
+.wrap--menu--black {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 120px !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo--click--none {
+    transform: translateY(-15px);
+}
+
+.wrap--menu {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.wrap--hidden--menu {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 89%;
+}
+
+.mnu--list li {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+}
+
+.mnu--list ul li a{
+    margin: 0 10px;
+    padding: 4px;
+    color: #1f1f1f;
+    font-family: UbuntuMedium;
+    transition: .3s;
+    letter-spacing: .3px;
+}.mnu--list ul li a:hover{
+    
+}
+
+.black-mnu .mnu-text {
+    color: #000;
+    left: -110px;
+}
+
+.logo_hover {
+    opacity: .85;
+    transition: .3s;
+}.logo_hover:hover {
+    opacity: 1;
+}
+
+.min--wrap--links {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    transform: rotate(-90deg);
+    position: absolute;
+    justify-content: space-between;
+    width: 200px;
+    top: 70%;
+    left: -155%;
+    font-family: UbuntuLight;
+    font-size: 1.06em;
+    letter-spacing: .3px;
+    transition: .3s;
+}.min--wrap--links a {
+    transition: .3s;
+}.min--wrap--links a:hover {
+    color: #000;
+}
+
+.scroll--down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: .85;
+    transition: .3s;
+}.scroll--down:hover{
+    opacity: 1;
+}
+
+.wrap--main--text {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 36.9%;
+    font-family: UbuntuBold;
+    justify-content: flex-end;
+    color: #fff;
+    height: 95%;
+    align-items: center;
+}
+
+.shell--text--main {
+    letter-spacing: .6px;
+    line-height: 50px;
+}
+
+.shell--text--main a {
+    font-size: .7em;
+    padding: 13px;
+    background: #1f1f1f;
+    font-family: UbuntuBold;
+    transition: .3s;
+}.shell--text--main a:hover{
+    background: #fff;
+    color: #000;
+}
+
+.shell--text--main :nth-child(2){
+    font-size: 1.2em;
+    font-family: UbuntuLight;
+    
+}.shell--text--main :nth-child(1){
+    font-size: 2.3em;
+}
+.shell--text--main span {
+    border-bottom: 1px solid #fff;
+}
+
+
+/*MENU*/
+.toggle-mnu {
+    line-height: 48px;
+    display: block;
+    width: 28px;
+    height: 20px;
+    opacity: .85;
+    transition: .3s;
+    position: relative;
+    z-index: 10;
+}.toggle-mnu:hover {
+    opacity: 1;
+}
+
+.mnu-text:before{
+    content: 'МЕНЮ';
+    position: absolute;
+    bottom: 40px;
+    top: -14px;
+    left: -70px;
+    font-family: UbuntuBold;
+    color: #fff;
+    letter-spacing: .3px;
+}
+
+.toggle-mnu .mnu-span:after,
+.toggle-mnu .mnu-span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.toggle-mnu .mnu-span:after {
+    top: 18px;
+}
+
+.toggle-mnu .mnu-span {
+    position: relative;
+    display: block;
+}
+
+.toggle-mnu .mnu-span,
+.toggle-mnu .mnu-span:after,
+.toggle-mnu .mnu-span:before {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+
+.black-mnu .mnu-span,
+.black-mnu .mnu-span:after,
+.black-mnu .mnu-span:before {
+    background-color: #000;
+}
+
+.mnu--new--style .mnu-span,
+.mnu--new--style .mnu-span:after,
+.mnu--new--style .mnu-span:before {
+    background-color: #000;
+}
+
+.toggle-mnu.on .mnu-span {
+    background-color: transparent;
+}
+
+.toggle-mnu.on .mnu-span:before {
+    transform: rotate(45deg) translate(-1px, 0px);
+}
+
+.toggle-mnu.on .mnu-span:after {
+    transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.toggle-mnu.on + #menu {
+    opacity: 1;
+    visibility: visible;
+}
+/*END--MENU*/
+
+
+/*END--FIRST--PAGE*/
+
+
+/*TWO--PAGE*/
+
+
+.new--style--verLine {
+    position: relative;
+    border-right: 1px solid #1f1f1f;
+}
+
+.new--style--verLine a {
+    color: #1f1f1f;
+}
+
+.new--style--verLine {
+    top: -100px;
+}
+
+.mnu--new--style{color: #1f1f1f;}
+
+.wrapper--form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+    letter-spacing: .2px;
+    margin-left: 88px;
+    position: absolute;
+    margin-top: 120px;
+}
+
+.form--cestionFour form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form--cestionFour button{
+    color: #1f1f1f;
+    background: #fff;
+    width: 212px;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid #000;
+    letter-spacing: .2px;
+    margin-left: 20px;
+}.form--cestionFour button:hover {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.form--cestionFour form :nth-child(1) {
+    margin: 0 20px 20px 0;
+}
+
+.form--cestionFour input{
+    padding-left: 10px;
+    width: 200px;
+    height: 38px;
+    border: 1px solid #cdcdcd;
+    letter-spacing: .1px;
+    font-family: UbuntuMedium;
+    transition: .3s;
+}
+
+::placeholder{color: #cdcdcd;font-family: UbuntuRegular;transition: .3s;}
+
+.form--cestionFour input:focus::placeholder {
+    color: #888888;
+}.form--cestionFour input:hover {
+    box-shadow: inset 1px 1px 6px rgba(10, 10, 10, 0.10);
+}
+
+.shell--form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wrap--main--textForm p:first-child {
+    color: #1f1f1f;
+    font-size: 3em;
+    font-family: UbuntuBold;
+    margin-bottom: 40px;
+}
+
+.wrap--main--textForm p:last-child {
+    color: #1f1f1f;
+    font-family: UbuntuRegular;
+    line-height: 22px;
+    margin-bottom: 17px;
+}
+
+.wrap--contacts--from {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    color: #1f1f1f;
+}
+
+.minWrap--conForm :first-child {
+    font-size: 1.2em;
+    font-family: UbuntuBold;
+    color: #1f1f1f;
+}.minWrap--conForm {
+    font-family: UbuntuLight;
+    color: #ababab;
+    line-height: 23px;
+}
+
+.wrap--contacts--from {
+    margin-top: 50px;
+}
+
+.wrapper--map {
+    position: relative;
+}
+
+.shell--map {
+    position: absolute;
+    right: 0;
+    top: -100px;
+    height: 100vh;
+    width: 44%;
+}
+
+/*TWO PAGE*/
+
+.wrapper--description--text--image {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 94.5%;
+    position: absolute;
+    right: 0;
+}
+
+.shell--images--description--image {
+    background-image: url(../images/about__company.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 47%;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+.shell--description---text {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    color: #1f1f1f;
+}
+
+.shell--description---text p:first-child{
+    font-size: 3em;
+    margin-top: 20px;
+    font-family: UbuntuBold;
+    line-height: 65px;
+}
+
+.shell--description---text p:last-child{
+    font-family: UbuntuRegular;
+    width: 39%;
+    line-height: 22.7px;
+    font-size: .96em;
+    margin: 30px 0 0 30px;
+}
+
+/*TWO PAGE END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
