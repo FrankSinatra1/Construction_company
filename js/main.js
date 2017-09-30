@@ -1,7 +1,3 @@
-$(document).ready(function() {
-	$('#fullpage').fullpage();
-});
-
 $(function() {
 
 	$(".wrap--menu").click(function() {
@@ -12,4 +8,13 @@ $(function() {
 		$(".full--wrapper--hidden--menu").slideToggle();
 	});
     
+});
+
+
+$(document).ready(function() {
+    
+});
+
+$(document).ready(function() {
+	$('#fullpage').fullpage();
 });

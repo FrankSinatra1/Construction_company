@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 a {
     text-decoration: none;
     color: #fff;
@@ -20,13 +21,6 @@ ul li {
 
 /*FIRST--PAGE*/
 
-.wrapper--section_one {
-    background-image: url(../images/main_image.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .vertical--line {
     display: -webkit-flex;
     display: -moz-flex;
@@ -39,6 +33,19 @@ ul li {
     position: absolute;
     top: 0;
     z-index: 1;
+}
+
+
+.dispNone {
+    display: none;
+}
+
+.wrapper--section_one-ttest {
+    background-image: url(../images/main_image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .wrapper--header {
@@ -62,6 +69,26 @@ ul li {
     justify-content: space-between;
     width: 89%;
     height: 100px;
+}
+
+.wrapper--section_one {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+}
+
+.mainScreenCenterText{
+}
+.mainScreenCenterText .new{
+	opacity: 0;
+}
+.mainScreenCenterText .div_opacity {
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+	opacity: 1;
 }
 
 .wrapper--hidden--menu {
@@ -98,6 +125,7 @@ ul li {
     transition: .3s;
     opacity: .85;
     font-family: UbuntuBold;   
+    z-index: 2;
 }.open--menu:hover, .close_up:hover{
     opacity: 1;
 }
@@ -166,7 +194,9 @@ ul li {
 .logo_hover {
     opacity: .85;
     transition: .3s;
-}.logo_hover:hover {
+}
+
+.logo_hover:hover {
     opacity: 1;
 }
 
@@ -203,23 +233,32 @@ ul li {
     opacity: 1;
 }
 
+.scroll--down {
+    animation: downAnim 1s infinite;
+}
+
+@keyframes downAnim {
+    0% {
+        margin-bottom: 20px;
+    }
+}
+
 .wrap--main--text {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    width: 36.9%;
     font-family: UbuntuBold;
-    justify-content: flex-end;
+    justify-content: flex-start;
     color: #fff;
-    height: 95%;
-    align-items: center;
+    align-items: center;    
+    margin: 17.5% 0 0 90px;
 }
 
 .shell--text--main {
     letter-spacing: .6px;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .shell--text--main a {
@@ -232,16 +271,8 @@ ul li {
     background: #fff;
     color: #000;
 }
-
-.shell--text--main :nth-child(2){
-    font-size: 1.2em;
-    font-family: UbuntuLight;
-    
-}.shell--text--main :nth-child(1){
-    font-size: 2.3em;
-}
-.shell--text--main span {
-    border-bottom: 1px solid #fff;
+.shell--text--main :nth-child(1){
+    font-size: 1.5em;
 }
 
 
@@ -527,11 +558,86 @@ ul li {
 
 
 
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+    .mnu--list {
+        font-size: .95em;
+    }
+    .mnu--list ul li a {
+        margin: 0 5px;
+    }
+    .open--menu, .close_up {
+        font-size: .95em;
+    }
+    .toggle-mnu {
+        width: 23px;
+        height: 17px;
+    }
+    .toggle-mnu .mnu-span:after, .toggle-mnu .mnu-span:before {
+        top: 8px;
+    }
+    .toggle-mnu .mnu-span:after {
+        top: 16px;
+    }
+    .wrap--menu--black {
+        width: 110px !important;
+    }
+    .wrap--menu {
+        width: 88px;
+    }
+    .shell--text--main {
+        line-height: 45px;
+    }
+    .shell--description---text p:first-child {
+        font-size: 2.3em;
+        line-height: 50px;
+    }
+    .shell--description---text p:last-child {
+        line-height: 20px;
+        font-size: .8em;    
+        width: 45%;
+    }
+    .wrapper--form {
+        width: 39%;
+        font-size: .9em;
+    }
+    .wrap--main--textForm p:first-child {
+        margin-bottom: 30px;
+    }
+    .logo_hover img{
+        width: 86%;
+    }
+    .shell--text--main :nth-child(1) {
+        font-size: 2em;
+    }
+}
 
-
-
-
-
+@media only screen and (min-width: 1800px) and (max-width: 2000px) {
+    .shell--description---text p:last-child {
+        font-size: 1.2em;
+        line-height: 25.7px;
+    }
+    .min--wrap--links {
+        width: 240px;
+        left: -190%;
+        font-size: 1.2em;
+    }
+    .mnu--list ul li a {
+        font-size: 1.1em;
+        letter-spacing: .1px;
+    }
+    .form--cestionFour button {
+        width: 242px;
+    }
+    .form--cestionFour input {
+        width: 230px;
+    }
+    .wrapper--form {
+        width: 33%;
+    }
+    .shell--map {
+        width: 46%;
+    }
+}
 
 
 
